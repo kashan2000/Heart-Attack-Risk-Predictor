@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Heart Attack Risk Predictor</title>
+        <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+
+        <!-- Website Title -->
+    	<div class="container">
+            <h2 class='container-heading'><span class="heading_font">Heart Attack Risk Predictor</span></h2>
+            <div class='description'>
+    			<p>A Machine Learning Web App, Built with Flask, Deployed using Heroku.</p>
+    		</div>
+    	</div>
+
+        <!-- Text Area -->
+    	<div class="ml-container">
+    		<form action="{{ url_for('predict') }}" method="POST">
+                AGE : <input class="form-input" type="text" name="age" placeholder="Enter Age"><br>
+                SEX : <input class="form-input" type="text" name="sex" placeholder="Sex"><br>
+                EXANG : <input class="form-input" type="text" name="exang" placeholder="exercise induced angina"><br>
+                CAA : <input class="form-input" type="text" name="caa" placeholder="Major Blood Vessels"><br>
+                TRTBPS : <input class="form-input" type="text" name="trtbps" placeholder=" resting blood pressure"><br>
+                CHOL : <input class="form-input" type="text" name="chol" placeholder="cholestoral in mg/dl"><br>
+                FBS : <input class="form-input" type="text" name="fbs" placeholder="fasting blood sugar"><br>
+                REST ECG : <input class="form-input" type="text" name="rest_ecg" placeholder=" resting electrocardiographic"><br>
+                THAACH : <input class="form-input" type="text" name="thalach" placeholder="maximum heart rate"><br>
+                CP : <input class="form-input" type="text" name="cp" placeholder="chest pain"><br>
+
+        		<input type="submit" class="my-cta-button" value="Predict">
+        	</form>
+    	</div>
+
+        <!-- Footer -->
+       <div class='footer'>
+           <div class="contact">
+               <a target="_blank" href="https://github.com/anujvyas/Diabetes-Prediction-Deployment"><i class="fab fa-github fa-lg contact-icon"></i></a>
+               <a target="_blank" href="www.linkedin.com/in/kashan-ahmed-khan-878343194"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
+           </div>
+           <p class='footer-description'>
+               
+              
+               
+              
+               <p class='footer-description'>Guidelines for Entering Values:
+               <p class='footer-description'>Age= For Male enter 1 and for Female enter 0
+               </p>
+               Exercise Induced Enigma 1 = yes; 0 = no</p>
+               Major Blood Vessels= Enter between 0 - 3</p>
+               Resting Blood Pressure= Enter in mm Hg</p>
+               Cholestoral in mg/dl fetched via BMI sensor</p>
+               Fasting blood sugar > 120 mg/dl (1 = true; 0 = false)</p>
+               Rest ECG :</p>
+               Value 0: normal</p>
+               Value 1: having ST-T wave abnormality (T wave inversions and/or ST elevation or depression of > 0.05 mV)</p>
+               Value 2: showing probable or definite left ventricular hypertrophy by Estes' criteria</p>
+               thalach : maximum heart rate achieved</p>
+               </p></p>
+               
+                Made with ❤️ by Kashan Ahmed Khan.</p>
+               
+               
+               
+       </div>
+
+    </body>
+</html>
